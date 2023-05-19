@@ -32,10 +32,30 @@ fn main() {
     let tup = (10,"hi",345);
     println!("{}",tup.0); // accessing content of a tuple
         let (aaa,bbb,ccc)=tup;
-//    array will have length but will have same type in it by default , if we make it mutable it will work.
+//    array will have length but will have same type in it by default , if we make it mutable
+// we will be able to modify the value of the array.
     let arr=[1,3,4];
-    print!("{}",arr[2]);
-        
+    println!("{}",arr[2]);
+//         vectors are resizable instances of variables that reside in heap memory.
+//     by using vec macro
+    let mut nums = vec![1,2,3];
+    nums.push(4     as i32);
+    println!("{:?}",nums);// this will print all the numbers
+    nums.pop();
+    println!("{:?}",nums);
+//     another method
+    let mut nums1 = Vec::new();
+    // this is essentially calling the vec![] like in line 41 , vector elements must be of
+    // same type
+    nums1.push(1);
+    nums1.push(11);
+    println!("{:?}",nums1);
+    nums1.reverse();
 
-
+    nums1.len();
+    println!("{:?}",nums1);
+    let mut numm = Vec::<i32>::with_capacity(4);//
+//     creating the vector with capacity during initialization.
+    let v:Vec<i32>=(0..5).collect();
+    println!("{:?}",v);
 }
