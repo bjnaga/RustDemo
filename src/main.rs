@@ -46,7 +46,7 @@ fn main() {
 //     another method
     let mut nums1 = Vec::new();
     // this is essentially calling the vec![] like in line 41 , vector elements must be of
-    // same type
+    // same type, We can add values to a Vector by creating a mutable
     nums1.push(1);
     nums1.push(11);
     println!("{:?}",nums1);
@@ -58,4 +58,40 @@ fn main() {
 //     creating the vector with capacity during initialization.
     let v:Vec<i32>=(0..5).collect();
     println!("{:?}",v);
+    let sv:&[i32] = &v;
+    println!("{:?}",sv);
+    let sv1:&[i32] = &sv[2..4];
+    println!("{:?}",sv1);
+//     sv and sv1 is directly pointing to data in v and its non owning reference
+//     ordinary reference is non owning point of reference to a single value
+//     but with slice its a reference to a range of continuous values.
+    
+// slice is most useful when a function operates on a array or a vector we use slice
+// strings are very similar to vectors as they are stored as a vector of bytes.
+//      string is always UTF8 and its heap allocated and not null terminated and
+//
+    let name =String::from("NG");
+    let like = "Pizza".to_string();
+    let name_new=name.replace("NG","naga ganesh");
+println!("{}",name);
+println!("{}",name_new);
+//     string slice
+//     its a fat pointer containing address and data , a string slice doesnt
+//     allocate memory in the heap.
+    let stri ="hello";
+    print!("{}",stri);
+// print!("{}",stri.bogus());
+
+let sstere =stri.to_string();
+    let sttt=&sstere;
+    println!("{}",sttt);
+    println!("{}",sstere);
+// == string are equal , != strings are not equal
+    println!("{}","ONe" =="one");
+    println!("{}","ONe".to_lowercase() =="one")
+
+// string literal
+
+
+
 }
