@@ -194,8 +194,23 @@ let mut num =0;
 
     let str2 = take_ownership_give_ownership("naga".to_string());
     println!("{}", str2);
-}
 
+
+    // references and borrowing - allow us to make references to a value without borrowing ownership
+//     2 type of references
+//     shared reference vs mutable reference
+//     shared reference allows us to read, we can have n number of references to value
+//     mutable reference we can read and write , so we can have only one reading and writing it
+
+
+    let mut strr=String::from("naga");
+    exchange_str(& mut strr);  // we are sending and retrieving the string ownership
+    println!("{}",strr);
+
+}
+fn exchange_str(strr:&mut String ){
+    strr.push_str("ganesh")
+}
 // ownership example function
 fn takes_ownership(some_string: String) {
     let str = some_string;
