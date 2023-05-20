@@ -164,6 +164,27 @@ let mut num =0;
     let y=x; // here x has moved the ownership to y so if we print we will get error
     println!("{:?}", y);
 // copy - deep and shallow copy
+// clone - if we want to take a variable value without taking ownership we use clone instead
+//     it performs a deep copy
+//     it may be expensive
+    let xx=vec!["naga".to_string()];
+    let yy =xx.clone();
+    let zz = yy.clone();
+    println!("{:?}", zz);
+    println!("{:?}", yy);
+    println!("{:?}", xx);
+// copy
+    let xxx=1;
+    let yyy=xxx;
+    println!("x ={}, y ={}", xxx, yyy); // this works because most types implement a move
+//     some implement copy , copy is implemented by type stored in stack , like int, float , char,
+//     bool, but tuple can have copy traits if every value it contains implements copy
+
+
+//     how moves work?
+
+
+
 
 
 }
