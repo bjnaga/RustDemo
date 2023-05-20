@@ -95,10 +95,10 @@ let sstere =stri.to_string();
 
     let sst = "\x52\x75\x73\x74";
     println!("{}",sst);
-    print_phase();
+    print_phase("this is a phrase");
 
 }
 //  function have to be named using snake_case
-fn print_phase(){
-    println!("Inside the function");
+fn print_phase(phrase: &str) {
+    println!("Inside the function :{}",phrase);
 }
