@@ -97,10 +97,12 @@ let sstere =stri.to_string();
     println!("{}",sst);
     print_phase("this is a phrase");
     println!("{}",gcd(10,20));
+    println!("{} ",multi_return_value(false));
 }
 //  function have to be named using snake_case
 fn print_phase(phrase: &str) {
     println!("Inside the function :{}",phrase);
+
 }
 fn gcd(mut a:i32 , mut b:i32)->i32   {
     while a!=0{
@@ -113,4 +115,14 @@ fn gcd(mut a:i32 , mut b:i32)->i32   {
     }
     // return a value by not including ; at the end.
     b
+}
+
+fn multi_return_value(flag:bool) -> bool{
+    if flag{
+         true
+    }
+    else{
+            false
+    //     simple false will work fine as well
+    }
 }
