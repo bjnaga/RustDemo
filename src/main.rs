@@ -1,3 +1,6 @@
+
+
+
 fn main() {
     let i = 10; // we cannot modify this value.
     let mut ii = 20;// we can modify this value.
@@ -140,6 +143,29 @@ let mut num =0;
     for numm in (1..6).rev(){
         println!("{}", numm);
     }
+
+
+    // ownership module to manage memory safety errors
+//  such as dangling pointers, double freeze using uninitialized memory safety and so on
+// this are the advantages of this mechanism
+// stack(LIFO) and heap- its unorganized, we request the space and address is returned
+// pushing data on stack and searching data on stack is always faster than data on heap
+// each variable in rust is associated with owner and therefore there can be only one owner
+// when owner goes out of scope memory is freed
+
+        let var =1; // created on stack
+        let mut s ="Hello world".to_string(); // created on heap
+        s.push_str(",world");
+    println!("{}", s);
+
+//     move - movie the ownership of value from one type to another
+
+    let x=vec!["naga".to_string()];
+    let y=x; // here x has moved the ownership to y so if we print we will get error
+    println!("{:?}", y);
+// copy - deep and shallow copy
+
+
 }
 
 

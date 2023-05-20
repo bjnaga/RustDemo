@@ -7,7 +7,8 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="20e4db72-8e7e-4793-9138-15e88cbe01f6" name="Changes" comment="function multiple return example added">
+    <list default="true" id="20e4db72-8e7e-4793-9138-15e88cbe01f6" name="Changes" comment="added control flow statements like &#10;if, if else, loop, while, for in">
+      <change afterPath="$PROJECT_DIR$/src/RustPrinciples.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.rs" afterDir="false" />
     </list>
@@ -15,6 +16,13 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Rust File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -78,7 +86,7 @@
       <workItem from="1684497737925" duration="277000" />
       <workItem from="1684498038466" duration="1789000" />
       <workItem from="1684500065120" duration="1896000" />
-      <workItem from="1684572902692" duration="2500000" />
+      <workItem from="1684572902692" duration="3951000" />
     </task>
     <task id="LOCAL-00001" summary="added scalar datatype , and compound types">
       <created>1684498241359</created>
@@ -129,7 +137,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684574516842</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="added control flow statements like &#10;if, if else, loop, while, for in">
+      <created>1684575561842</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1684575561842</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -143,6 +158,7 @@
     <MESSAGE value="function  added" />
     <MESSAGE value="function return example added" />
     <MESSAGE value="function multiple return example added" />
-    <option name="LAST_COMMIT_MESSAGE" value="function multiple return example added" />
+    <MESSAGE value="added control flow statements like &#10;if, if else, loop, while, for in" />
+    <option name="LAST_COMMIT_MESSAGE" value="added control flow statements like &#10;if, if else, loop, while, for in" />
   </component>
 </project>
