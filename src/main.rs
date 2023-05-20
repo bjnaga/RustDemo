@@ -96,9 +96,21 @@ let sstere =stri.to_string();
     let sst = "\x52\x75\x73\x74";
     println!("{}",sst);
     print_phase("this is a phrase");
-
+    println!("{}",gcd(10,20));
 }
 //  function have to be named using snake_case
 fn print_phase(phrase: &str) {
     println!("Inside the function :{}",phrase);
+}
+fn gcd(mut a:i32 , mut b:i32)->i32   {
+    while a!=0{
+        if a < b {
+            let c = a;
+            a = b;
+            b = c;
+        }
+        a= a%b;
+    }
+    // return a value by not including ; at the end.
+    b
 }
