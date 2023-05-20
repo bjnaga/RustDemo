@@ -88,10 +88,17 @@ let sstere =stri.to_string();
     println!("{}",sstere);
 // == string are equal , != strings are not equal
     println!("{}","ONe" =="one");
-    println!("{}","ONe".to_lowercase() =="one")
+    println!("{}","ONe".to_lowercase() =="one");
 
 // string literal
+//  some time we dont want valid utf-8 characters thats when we use string literals
 
+    let sst = "\x52\x75\x73\x74";
+    println!("{}",sst);
+    print_phase();
 
-
+}
+//  function have to be named using snake_case
+fn print_phase(){
+    println!("Inside the function");
 }
