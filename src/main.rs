@@ -182,11 +182,36 @@ let mut num =0;
 
 
 //     how moves work?
+     let s= String::from("hello world");
+    takes_ownership(s);// gives ownership to fn take_ownership
+    // println!("{}", s);
 
+    let ii =1;
+    takes_copy(ii);
 
+    let str1= give_ownership();
+    println!("{}", str1);
 
+    let str2 = take_ownership_give_ownership("naga".to_string());
+    println!("{}", str2);
+}
 
+// ownership example function
+fn takes_ownership(some_string: String) {
+    let str = some_string;
+    println!("{}", str);
+}
+// ownership copy
+fn takes_copy(str:i32) {
+    let str = str;
+    println!("{}", str);
+}
+fn give_ownership()-> String{
+    "ownership given".to_string()
+}
 
+fn take_ownership_give_ownership(ownership: String)-> String{
+    ownership
 }
 
 

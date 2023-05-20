@@ -7,7 +7,7 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="20e4db72-8e7e-4793-9138-15e88cbe01f6" name="Changes" comment="added ownership and move function examples">
+    <list default="true" id="20e4db72-8e7e-4793-9138-15e88cbe01f6" name="Changes" comment="copy traits is added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.rs" afterDir="false" />
     </list>
@@ -85,7 +85,7 @@
       <workItem from="1684497737925" duration="277000" />
       <workItem from="1684498038466" duration="1789000" />
       <workItem from="1684500065120" duration="1896000" />
-      <workItem from="1684572902692" duration="4692000" />
+      <workItem from="1684572902692" duration="5407000" />
     </task>
     <task id="LOCAL-00001" summary="added scalar datatype , and compound types">
       <created>1684498241359</created>
@@ -150,7 +150,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684576906479</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="copy traits is added">
+      <created>1684577635718</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1684577635718</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -166,6 +173,7 @@
     <MESSAGE value="function multiple return example added" />
     <MESSAGE value="added control flow statements like &#10;if, if else, loop, while, for in" />
     <MESSAGE value="added ownership and move function examples" />
-    <option name="LAST_COMMIT_MESSAGE" value="added ownership and move function examples" />
+    <MESSAGE value="copy traits is added" />
+    <option name="LAST_COMMIT_MESSAGE" value="copy traits is added" />
   </component>
 </project>
